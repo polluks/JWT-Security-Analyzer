@@ -140,53 +140,33 @@ The tests validate:
 }
 
 ## Example Response
-
+```
 {
-
 "header": {"alg":"HS256"},
-
 "payload": {"sub":"123"},
-
 "findings": \[\],
-
 "risk_score": 0
-
 }
-
+```
 # Project Structure
-
+```
 jwt-security-analyzer/
-
 |
-
 +-- app/
-
 | +-- main.py
-
 | +-- analyzer.py
-
 | +-- checks.py
-
 |
-
 +-- templates/
-
 | +-- index.html
-
 |
-
 +-- tests/
-
 | +-- test_analyzer.py
-
 |
-
 +-- README.md
-
 +-- requirements.txt
-
 +-- .gitignore
-
+```
 # Security Note
 
 **Warning:** JWT payloads should never contain sensitive information. They are only Base64 encoded and can be easily decoded by anyone. This tool helps developers identify insecure token usage early.
